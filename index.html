@@ -1270,7 +1270,7 @@
     </div>
     <footer class="footer-center dark-style">
         <a class="go-top" href="#">
-            <i class="fa fa-chevron-up"></i>
+            <img class="theicon behere" src="./Home_assests/icon-up.png">
         </a>
         <div class="container">
             <p class="copyright-line">All rights reserved 2023. Made with love and passion, Sutsareeya :)</p>
@@ -1345,6 +1345,19 @@ ul {
     flex-direction: row;
     align-items: center;
     background-color: white;
+}
+
+.behere{
+	position: fixed;
+    bottom: 20px;
+    right: 40px;
+    background: #0000000d !important;
+    border-radius: 500px;
+}
+
+.go-top{
+	
+	background: none !important;
 }
 
 .thelogo {
@@ -1884,6 +1897,10 @@ div#myprojects {
 @media (max-width: 767px) {
 	.headerbar{
 		padding: 15px 20px 10px;
+	}
+	.behere{
+		right:50%;
+		left:50%;
 	}
 	.introduction {
 		width:100%;
