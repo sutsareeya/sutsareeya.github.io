@@ -29,14 +29,14 @@
 </head>
 
 <body>
-    <div class="limitedwidth" id="section-1">
-        <div class="headerbar">
-            <img class="thelogo" src="./Home_assests/LOGO.png">
-            <div>
-                <a href="mailto:sutsareeya.k@gmail.com"><img class="theicon" src="./Home_assests/email-icon.png"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/sutsareeyak"><img class="theicon" src="./Home_assests/linkedin-icon.png"></a>
-            </div>
+    <div class="headerbar">
+        <img class="thelogo" src="./Home_assests/LOGO.png">
+        <div>
+            <a href="mailto:sutsareeya.k@gmail.com"><img class="theicon" src="./Home_assests/email-icon.png"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/sutsareeyak"><img class="theicon" src="./Home_assests/linkedin-icon.png"></a>
         </div>
+    </div>
+    <div class="limitedwidth" id="section-1">
         <div class="introduction">
             <div class="grid-image-display">
                 <img src="./Home_assests/image-01.png">
@@ -51,7 +51,7 @@
             </div>
             <div class="text-introduction">
                 <h1 class="text-block" id="helloText">Hello!</h1>
-                <h2>Engineering Graduate and Design Expert 
+                <h2>Engineering Graduate and Design Expert
                     Driving Digital Transformation with Creativity and Data Analysis to Enhance Efficiency and Innovation </h2>
                 <p>I‘m Sutsareeya, 洪晨曦, the combination between the creative and logical analyzed with extensive experience in multimedia designing, marketing analysis, user experience, and team management. I am confident to learn and improve together with you.</p>
                 <div class="two-cta fade-in">
@@ -1336,14 +1336,15 @@ ul {
 }
 
 .headerbar {
-    position: sticky;
-    padding: 20px 0;
-    z-index: 2;
+    position: fixed;
+    padding: 15px 40px 10px;
+    z-index: 3;
     display: flex;
     justify-content: space-between;
     width: 100%;
     flex-direction: row;
     align-items: center;
+    background-color: white;
 }
 
 .thelogo {
@@ -1366,7 +1367,7 @@ ul {
     width: 1080px;
     align-items: flex-start;
     gap: 90px;
-    padding-top: 20px;
+    padding-top: 100px;
 }
 
 .grid-image-display {
@@ -1881,6 +1882,9 @@ div#myprojects {
 
 
 @media (max-width: 767px) {
+	.headerbar{
+		padding: 15px 20px 10px;
+	}
 	.introduction {
 		width:100%;
 		flex-direction: column;
